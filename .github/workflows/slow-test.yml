@@ -10,5 +10,6 @@ jobs:
     - name: Run tests
       run: |
         echo "Running slow tests"
+        exit 1
         sleep 60
         echo "Slow tests complete"
