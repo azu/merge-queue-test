@@ -1,0 +1,14 @@
+name: Slow Test
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run tests
+      run: |
+        echo "Running slow tests"
+        sleep 60
+        echo "Slow tests complete"
